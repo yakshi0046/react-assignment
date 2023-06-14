@@ -1,0 +1,52 @@
+.box{
+    width:70px;
+    height:70px;
+    margin:10px;
+    content: center;
+    background-color: bisque;
+}
+.org-tree li {
+    float: right;
+    text-align: center;
+    list-style-type: none;
+   }
+  
+  
+   .card{
+     /* height: 10px; */
+     width: 100px;
+     margin-top: 100px;
+     margin-left: 220px;
+     /* margin-right: 100px ; */
+     /* margin-bottom: 100px; */
+     padding: 10px 10px;
+     display: table-cell;
+   }
+  
+   .org-tree ul::before,
+  .org-tree ul::after {
+    content: "";
+    position: absolute;
+    left:20%;
+    top: 0;
+    right: 80%;
+    border-top: 1px solid #ccc;
+    width: 10%;
+    height: 10px;
+  }
+  .org-tree ul::after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid #ccc;
+    padding: 10px 10px;
+  }
+  .org-tree li:last-child::before {
+    border-radius: 0 5px 0 0;
+    left:20%;
+
+  }
+  .org-tree li:first-child::after {
+    border-radius: 5px 0 0 0;
+    left:20%;
+
+  }
